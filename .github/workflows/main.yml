@@ -6,7 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-<<<<<<< HEAD
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.5
@@ -22,22 +21,4 @@ jobs:
     - name: Test with pytest
       run: |
         make test
-=======
-     runs-on: ubuntu-latest
 
-     steps:
-     - uses: actions/checkout@v2
-     - name: Set up Python 3.5
-       uses: actions/setup-python@v1
-       with:
-         python-version: 3/5
-     - name: Install dependencies
-       run: |
-         make install
-     - name: Lint with pylint
-       run: |
-         make lint
-     - name: Test with pytest
-       run: |
-         make test  
->>>>>>> 86e815be7b102ce9730004f523e53676f1d7292b
